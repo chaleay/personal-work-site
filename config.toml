@@ -8,10 +8,12 @@ copyright = "Copyright © 2008–2019" #supports html markup
 
 [params]
 about = "description of yourself"
-img = "img/logo.png"
+img = "img/me.jpg"
 
-mattermost = "https://chatmatters.pnc.com/pnc/messages/PLid"
-email = "pnc email"
+mattermost = "https://chatmatters.pnc.com/pnc/messages/PK21213"
+email = "elijah.gaytan@pnc.com"
+github = "https://github.com/chaleay"
+linkedIn  = "https://www.linkedin.com/in/elijahcgaytan/"
 # site meta description
 metadesc = "A simple privacy oriented bootstrap hugo blog"
 # site meta keywords

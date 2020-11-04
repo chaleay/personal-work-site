@@ -1,28 +1,149 @@
+* {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box !important;
+  background-color: #2c2e30 !important;
+  color: white;
+}
+
 .w3-section {
-    margin-top: 16px!important;
-    margin-bottom: 16px!important
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
 }
 .w3-light-gray {
-    color: #000!important;
-    background-color: #f1f1f1!important
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
 }
 
-
-.w3-container
- {
-    padding: 0.01em 16px
+.w3-container {
+  padding: 0.01em 16px;
 }
 
 .w3-padding-small {
-    padding: 4px 8px!important
+  padding: 4px 8px !important;
 }
 
 .w3-center {
-    text-align: center!important
+  text-align: center !important;
 }
 
 .w3-red {
-    color: #fff!important;
-    background-color: #007bff!important
+  color: #fff !important;
+  background-color: #007bff !important;
 }
 
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.spec-Gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(143, 195, 223, 0.65),
+    rgba(23, 94, 165, 0.65)
+  );
+  box-shadow: 0rem 0.2rem 1rem black;
+  border-radius: 0.5rem;
+  height: 40vh;
+}
+
+.spec-ProfilePicture {
+  margin-top: 2rem;
+  width: 13%;
+  border: 2px solid rgba(22, 32, 33, 0.4);
+  box-shadow: 0 3px 5px #0c0f12;
+
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.spec-ProfilePicture:hover {
+  scale: (1.4rem);
+}
+.spec-nameText {
+  font-weight: 700;
+  text-shadow: 0px 3px 5px #0c0f12;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+  margin-bottom: 1rem;
+}
+
+.spec-Buttons-anim {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  position: relative;
+}
+
+.spec-Button,
+.spec-Button:link,
+.spec-Button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgb(230, 244, 253);
+  padding: 0.2rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  color: #064673;
+
+  /* for absolute pos */
+
+  transition: all 0.2s;
+}
+
+.spec-Button:hover {
+  background-color: #d2e8f8;
+}
+
+.spec-Button:active,
+.spec-Button:focus {
+  outline: none;
+  /* realted to initial link state */
+  transform: translateY(-10px);
+  box-shadow: 0 3px 10px #101518;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  /*
+    60% {
+      transform: rotate(289deg);
+    }
+  */
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
