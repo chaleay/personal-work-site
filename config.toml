@@ -1,0 +1,22 @@
+baseURL = "/"
+
+languageCode = "en-us"
+title = "Elijah Gaytan" #ElijahGaytan
+theme = "monopriv"
+copyright = "Copyright © 2008–2019" #supports html markup
+
+
+[params]
+about = "description of yourself"
+img = "img/logo.png"
+
+mattermost = "https://chatmatters.pnc.com/pnc/messages/PLid"
+email = "pnc email"
+# site meta description
+metadesc = "A simple privacy oriented bootstrap hugo blog"
+# site meta keywords
+metakeys = "hugo, simple, minimal, bootstrap, blog"
+# enable/disable disqus comments 
+disqus = false 
+# enable/disable google analytics 
+analytics = false 
