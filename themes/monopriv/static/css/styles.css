@@ -59,7 +59,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
 }
 
 .spec-Gradient {
@@ -70,14 +70,20 @@ footer {
   );
   box-shadow: 0rem 0.2rem 1rem black;
   border-radius: 0.5rem;
-  height: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  animation: fadeIn 2s ease-out;
+}
+
+.spec-homeContent {
 }
 
 .spec-ProfilePicture {
-  margin-top: 2rem;
+  margin-top: 3rem;
   border: 2px solid rgba(22, 32, 33, 0.4);
   box-shadow: 0 3px 5px #0c0f12;
-  width: 25%;
+  width: 35%;
 
   animation-name: moveInRight;
   animation-duration: 2s;
@@ -100,6 +106,7 @@ footer {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   position: relative !important;
+  margin-bottom: 1rem;
 }
 
 .spec-Button,
@@ -118,6 +125,7 @@ footer {
 
   /* for absolute pos */
   transition: all 0.3s;
+  margin-bottom: inherit;
 }
 
 .spec-Button:hover {
@@ -136,6 +144,34 @@ footer {
 
 u-pad-bottom-med {
   padding-bottom: 100px !important;
+}
+
+u-margin-bottom-med {
+  margin-bottom: 2rem !important;
+}
+
+.spec-nav {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+/* nav button style */
+.spec-navStyle,
+.spec-navStyle:link,
+.spec-navStyle:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #678ba0;
+  margin-right: 1.5rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.spec-navStyle:hover {
+  transform: scale(1.3);
+  color: white;
 }
 
 @keyframes moveInRight {
@@ -173,5 +209,21 @@ u-pad-bottom-med {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  /*
+    60% {
+      transform: rotate(289deg);
+    }
+  */
+
+  100% {
+    opacity: 1;
   }
 }

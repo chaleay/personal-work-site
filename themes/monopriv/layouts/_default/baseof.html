@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{- partial "header.html" . -}}
   <body class="spec-body">
+    <div class="spec-nav">{{- partial "nav.html" . -}}</div>
     <div class="spec-content">{{- partial "hero.html" . -}}</div>
   </body>
   {{- partial "footer.html" . -}}
