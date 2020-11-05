@@ -1,13 +1,12 @@
-baseURL = "/"
-
+baseURL = "https://gohugo.io/"
 languageCode = "en-us"
-title = "Elijah Gaytan" #ElijahGaytan
+title = "Elijah Gaytan" 
 theme = "monopriv"
-copyright = "Copyright © 2008–2019" #supports html markup
+copyright = "Copyright © 2020" #supports html markup
 
 
 [params]
-about = "description of yourself"
+about = "personal pnc site"
 img = "img/me.jpg"
 
 mattermost = "https://chatmatters.pnc.com/pnc/messages/PK21213"
