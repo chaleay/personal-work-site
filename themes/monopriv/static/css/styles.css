@@ -79,6 +79,14 @@ footer {
 .spec-homeContent {
 }
 
+.spec-subtitle {
+  letter-spacing: 0.8rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  margin-bottom: 1rem;
+}
+
 .spec-ProfilePicture {
   margin-top: 3rem;
   border: 2px solid rgba(22, 32, 33, 0.4);
@@ -100,6 +108,11 @@ footer {
   animation-timing-function: ease-out;
 
   margin-bottom: 1rem;
+}
+
+.spec-nameText:hover,
+.spec-subtitle:hover {
+  transform: scale(1.02);
 }
 
 .spec-Buttons-anim {
