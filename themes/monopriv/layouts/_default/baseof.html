@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{- partial "header.html" . -}}
-  <body class="pt-5">
-    <div id="content">{{- block "main" . -}} {{ end }}</div>
+  <body class="spec-body">
+    <div class="spec-content">{{- partial "hero.html" . -}}</div>
   </body>
   {{- partial "footer.html" . -}}
 </html>

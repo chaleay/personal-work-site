@@ -6,6 +6,7 @@ body {
   box-sizing: border-box !important;
   background-color: #2c2e30 !important;
   color: white;
+  min-height: 100vh;
 }
 
 .w3-section {
@@ -44,6 +45,23 @@ fixed-height-100 {
 }
 
 /* Custom CSS */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.spec-body {
+  position: relative;
+}
+
+.spec-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
 .spec-Gradient {
   background-image: linear-gradient(
     to right bottom,
@@ -59,6 +77,7 @@ fixed-height-100 {
   margin-top: 2rem;
   border: 2px solid rgba(22, 32, 33, 0.4);
   box-shadow: 0 3px 5px #0c0f12;
+  width: 25%;
 
   animation-name: moveInRight;
   animation-duration: 2s;
