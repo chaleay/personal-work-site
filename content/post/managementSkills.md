@@ -5,6 +5,6 @@ skill: "Management Skills"
 image: "/img/skills/management.png"
 summary: "Management Skills"
 draft: false
-weight: "0"
+weight: "10"
 section: "1"
 ---

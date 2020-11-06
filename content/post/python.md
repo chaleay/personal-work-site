@@ -6,6 +6,6 @@ skill: "Python"
 summary: "Python"
 image: "/img/skills/python.png"
 draft: false
-weight: "0"
+weight: "5"
 section: "3"
 ---

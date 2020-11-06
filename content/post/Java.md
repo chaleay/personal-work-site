@@ -6,6 +6,6 @@ skill: "Java"
 summary: "Java"
 image: "/img/skills/java.png"
 draft: false
-weight: "0"
+weight: "60"
 section: "2"
 ---

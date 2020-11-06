@@ -1,3 +1,4 @@
 #file
 themes/monopriv/layouts/index.html
-themes/monopriv/layouts/partials/skills.html
+themes/monopriv/layouts/_default/*.html
+themes/monopriv/layouts/partials/*.html

@@ -72,7 +72,8 @@ footer {
   border-radius: 0.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
-
+  width: 100%;
+  height: 100%;
   animation: fadeIn 2s ease-out;
 }
 
@@ -185,9 +186,56 @@ u-margin-bottom-med {
   display: inline-block;
 }
 
+.spec-navStyle:last-child {
+  margin-right: 0rem;
+}
+
 .spec-navStyle:hover {
   transform: scale(1.3);
   color: white;
+}
+
+.spec-skillList {
+  animation: fadeIn 3s ease-in-out;
+  position: relative;
+}
+
+table {
+  color: #2c2e30 !important;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.spec-title {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  transition: all 0.3s;
+  border-radius: 1.3rem;
+  background-color: #577d97;
+  position: inherit;
+}
+
+.spec-title::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.3rem;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+.spec-title:hover::after {
+  background-color: #577d97;
+  transform: scaleX(10) scaleY(30);
+  opacity: 0.7;
+}
+
+.spec-title:hover + table {
+  opacity: 1;
 }
 
 @keyframes moveInRight {

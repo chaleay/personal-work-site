@@ -6,6 +6,6 @@ skill: "Document"
 image: "/img/skills/paperwork.png"
 summary: "Document"
 draft: false
-weight: "0"
+weight: "20"
 section: "1"
 ---

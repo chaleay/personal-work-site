@@ -6,6 +6,6 @@ skill: "SQL"
 summary: "SQL"
 image: "/img/skills/SQL.png"
 draft: false
-weight: "0"
+weight: "70"
 section: "2"
 ---

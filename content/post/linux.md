@@ -6,6 +6,6 @@ skill: "Linux"
 summary: "Linux"
 image: "/img/skills/linux.png"
 draft: false
-weight: "0"
+weight: "80"
 section: "3"
 ---

@@ -6,6 +6,6 @@ skill: "Docker"
 summary: "Docker"
 image: "/img/skills/docker.png"
 draft: false
-weight: "0"
+weight: "20"
 section: "2"
 ---

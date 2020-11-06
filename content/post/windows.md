@@ -6,6 +6,6 @@ skill: "Windows"
 summary: "Windows"
 image: "/img/skills/windows.png"
 draft: false
-weight: "0"
+weight: "90"
 section: "2"
 ---

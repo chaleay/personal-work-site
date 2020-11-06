@@ -2,8 +2,11 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{- partial "header.html" . -}}
   <body class="spec-body">
-    <div>{{- partial "nav.html" . -}}</div>
-    <div class="spec-content mt-3">{{- partial "hero.html" . -}}</div>
+    <div id="content">
+      {{- partial "nav.html" . -}} 
+      <div class=" mt-5">{{- partial "hero.html" . -}}</div>
+      {{- block "main" . -}}
+      {{ end }}
+    </div>
   </body>
-  {{- partial "footer.html" . -}}
 </html>

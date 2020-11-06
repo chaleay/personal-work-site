@@ -6,6 +6,6 @@ skill: "NoSQL"
 summary: "NoSQL"
 image: "/img/skills/NoSQL.png"
 draft: false
-weight: "0"
+weight: "40"
 section: "3"
 ---

@@ -6,6 +6,6 @@ skill: "Kubernetes"
 summary: "Kubernetes"
 image: "/img/skills/Kubernetes.png"
 draft: false
-weight: "0"
+weight: "1"
 section: "1"
 ---
