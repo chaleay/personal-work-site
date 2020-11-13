@@ -6,6 +6,6 @@ skill: "ETPM"
 summary: "REACT"
 image: "/img/skills/react.png"
 draft: false
-weight: "65"
+weight: "75"
 section: "1"
 ---

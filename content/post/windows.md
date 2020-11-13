@@ -7,5 +7,5 @@ summary: "Windows"
 image: "/img/skills/windows.png"
 draft: false
 weight: "90"
-section: "2"
+section: "3"
 ---

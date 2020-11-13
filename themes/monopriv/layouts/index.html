@@ -1,47 +1,30 @@
 {{define "main"}}
-<section id="posts" class="container text-center text-monospace mt-5 pb-5 spec-skillList">
-	<h3 class='spec-title'>My Skills &darr;</h3>
-	<table style="width:100%">
-			<td valign="top">
-		<div class="text-center">
-			{{range where .Site.Pages.ByWeight "Params.section" "1"}}
-				{{if eq .Section "post"}}
-				<div class="text-justified mt-3"style="max-width: 500px; margin: 0 auto;">
-					<div>
-						<h5>{{.Params.Summary}}</h5>
-						<img class="skill-image" src="{{.Params.Image}}" style="float: left;" height="50" width="50">
-						<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1; margin: 0 80px;">
-							<div class="w3-container w3-padding-small w3-red w3-center" style="width: {{.Params.Weight}}">
-								{{.Params.Weight}} </div>
-						</div>
-					</div>
-					<div style="clear: both;"></div>
-				</div>
-				{{end}}
-			{{end}}
-		</div></td>
-			<td valign="top">
-		<div class="text-center">
-			{{range where .Site.Pages.ByWeight "Params.section" "2"}}
-				{{if eq .Section "post"}}
-				<div class="text-justified mt-3"style="max-width: 500px; margin: 0 auto;">
-					<div>
-						<h5>{{.Params.Summary}}</h5>
-						<img class="skill-image" src="{{.Params.Image}}" style="float: left;" height="50" width="50">
-						<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1; margin: 0 80px;">
-							<div class="w3-container w3-padding-small w3-red w3-center" style="width: {{.Params.Weight}}">
-								{{.Params.Weight}} </div>
-						</div>
-					</div>
-					<div style="clear: both;"></div>
-				</div>
-				{{end}}
-			{{end}}
-		</div>
-		</td>
-		<td valign="top">
+<div class="row">
+<div class="col">
+	<section id="posts" class="text-center text-monospace ml-5 mt-5 pb-5 spec-skillList">
+		<h3 class='spec-title'>My Skills &darr;</h3>
+		<table style="width:100%">
+				<td valign="top">
 			<div class="text-center">
-				{{range where .Site.Pages.ByWeight "Params.section" "3"}}
+				{{range where .Site.Pages.ByWeight "Params.section" "1"}}
+					{{if eq .Section "post"}}
+					<div class="text-justified mt-3"style="max-width: 500px; margin: 0 auto;">
+						<div>
+							<h5>{{.Params.Summary}}</h5>
+							<img class="skill-image" src="{{.Params.Image}}" style="float: left;" height="50" width="50">
+							<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1; margin: 0 80px;">
+								<div class="w3-container w3-padding-small w3-red w3-center" style="width: {{.Params.Weight}}">
+									{{.Params.Weight}} </div>
+							</div>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+					{{end}}
+				{{end}}
+			</div></td>
+				<td valign="top">
+			<div class="text-center">
+				{{range where .Site.Pages.ByWeight "Params.section" "2"}}
 					{{if eq .Section "post"}}
 					<div class="text-justified mt-3"style="max-width: 500px; margin: 0 auto;">
 						<div>
@@ -58,6 +41,46 @@
 				{{end}}
 			</div>
 			</td>
-		</table>
-</section>
+			<td valign="top">
+				<div class="text-center">
+					{{range where .Site.Pages.ByWeight "Params.section" "3"}}
+						{{if eq .Section "post"}}
+						<div class="text-justified mt-3"style="max-width: 500px; margin: 0 auto;">
+							<div>
+								<h5>{{.Params.Summary}}</h5>
+								<img class="skill-image" src="{{.Params.Image}}" style="float: left;" height="50" width="50">
+								<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1; margin: 0 80px;">
+									<div class="w3-container w3-padding-small w3-red w3-center" style="width: {{.Params.Weight}}">
+										{{.Params.Weight}} </div>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+						{{end}}
+					{{end}}
+				</div>
+				</td>
+			</table>
+	</section>
+</div>
+<div class="col">
+	<section class="text-center text-monospace mt-5 pb-5 spec-skillList">
+		<h3 class='spec-experience'>About Me &darr;</h3>
+		<div class='spec-reveal mt-3'>
+			<h2 class='spec-head'>Education</h2>
+			<h6>Texas State University - <span>B.S Computer Science</span></h6>
+			<h2 class='spec-head mt-4'>Experience</h2>
+			<h6>PNC - <span>Software Developer</span></h6>
+			<h6>Texas State University - <span>Virtual Reality Engineer</span></h6>
+			<p class='mt-4 ml-2'>Hey! I'm Elijah. I started off my undergrad with an interest in game development and VR,
+				but over the past couple years I've fallen in love with Web Development. I'm a huge fan of the PERN Stack
+				(PostgreSQL, Express, Node, React) but I've started experimenting with new frameworks such as GraphQL, and
+				Typescript.
+			</p>
+			<p class=' mt-4 ml-2'><span>When I'm not coding, you can catch me playing classical guitar, lifting weights, and practicing Mixed Martial Arts.
+			</span></p>
+		</div>
+	</section>
+</div>
+</div>
 {{end}}
