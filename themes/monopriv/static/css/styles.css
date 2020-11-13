@@ -241,7 +241,7 @@ table {
 
 .spec-experience:hover::after {
   background-color: #eeeeee;
-  transform: scaleX(-15) scaleY(-25);
+  transform: scaleX(-14) scaleY(40);
   opacity: 0.9;
 }
 
